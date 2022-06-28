@@ -22,13 +22,13 @@ public class CalculadoraIMC {
 				resultado = "Sobrepeso";
 			}
 			else if (imc >= 30.00 && imc <= 34.99) {
-				resultado = "Obesidade grau I";
+				resultado = "Obesidade Grau I";
 			}
 			else if (imc >= 35.00 && imc <= 34.99) {
-				resultado = "Obesidade grau II";
+				resultado = "Obesidade Grau II";
 			}
 			else if (imc >= 40.00) {
-				resultado = "Obesidade grau III";
+				resultado = "Obesidade Grau III";
 			}
 		}
 		// Índice de massa corporal para mulheres acima de 65 anos
@@ -44,13 +44,13 @@ public class CalculadoraIMC {
 					resultado = "Sobrepeso";
 				}
 				else if (imc >= 32.1 && imc <= 47.0) {
-					resultado = "Obesidade grau I";
+					resultado = "Obesidade Grau I";
 				}
 				else if (imc >= 37.1 && imc <= 41.9) {
-					resultado = "Obesidade grau II";
+					resultado = "Obesidade Grau II";
 				}
 				else if (imc >= 42.0) {
-					resultado = "Obesidade grau III";
+					resultado = "Obesidade Grau III";
 				}
 			}
 			if (sexo.equals("masculino")) {
@@ -64,13 +64,13 @@ public class CalculadoraIMC {
 					resultado = "Sobrepeso";
 				}
 				else if (imc >= 30.1 && imc <= 35.0) {
-					resultado = "Obesidade grau I";
+					resultado = "Obesidade Grau I";
 				}
 				else if (imc >= 35.1 && imc <= 39.9) {
-					resultado = "Obesidade grau II";
+					resultado = "Obesidade Grau II";
 				}
 				else if (imc >= 40.0) {
-					resultado = "Obesidade grau III";
+					resultado = "Obesidade Grau III";
 				}
 			}
 		}
