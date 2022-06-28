@@ -7,13 +7,13 @@ public class AppTest {
     @Test
     public void testeBaixoPesoMuitoGraveJovem() {
     CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1.733, 20, ""));
+        assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1.73, 20, ""));
     }
    
     @Test
     public void testeBaixoPesoMuitoGraveVelho() {
     CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1.733, 65, ""));
+        assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1.73, 65, ""));
     }
 
     @Test
@@ -45,26 +45,26 @@ public class AppTest {
      @Test
      public void testeBaixoPesoLimiteMaximoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(56.0, 1.742, 65, ""));
+        assertEquals("Baixo peso", calc.calcularImc(56.0, 1.74, 65, ""));
      }
      
      @Test
      public void testeBaixoPesoLimiteMaximoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(57.0, 1.756, 20, ""));
+        assertEquals("Baixo peso", calc.calcularImc(57.0, 1.75, 20, ""));
      }  
      
      
      @Test
      public void testeBaixoPesoLimiteMinimoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(52.0, 1.749, 20, ""));
+        assertEquals("Baixo peso", calc.calcularImc(52.0, 1.74, 20, ""));
      }    
      
      @Test
      public void testeBaixoPesoLimiteMinimoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(52.0, 1.749, 65, ""));
+        assertEquals("Baixo peso", calc.calcularImc(52.0, 1.74, 65, ""));
      }  
      
  
@@ -87,13 +87,13 @@ public class AppTest {
      @Test
      public void testePesoNormalLimiteMinimoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Peso normal", calc.calcularImc(53.0, 1.692, 20, ""));
+        assertEquals("Peso normal", calc.calcularImc(53.0, 1.69, 20, ""));
      }    
      
      @Test
      public void testePesoNormalLimiteMinimoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Peso normal", calc.calcularImc(53.0, 1.692, 65, ""));
+        assertEquals("Peso normal", calc.calcularImc(53.0, 1.69, 65, ""));
      }    
      
      
@@ -113,58 +113,58 @@ public class AppTest {
      @Test
      public void testeSobrePesoLimiteMinimoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Sobrepeso", calc.calcularImc(74.0, 1.719, 20, ""));
+        assertEquals("Sobrepeso", calc.calcularImc(74.0, 1.71, 20, ""));
      }
      
      @Test
      public void testeSobrePesoLimiteMinimoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Sobrepeso", calc.calcularImc(74.0, 1.719, 65, ""));
+        assertEquals("Sobrepeso", calc.calcularImc(74.0, 1.71, 65, ""));
      }
      
        
      @Test
      public void testeObesidadeGrauILiminteMaximoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau I", calc.calcularImc(101.0, 1.699, 20, ""));
+        assertEquals("Obesidade Grau I", calc.calcularImc(101.0, 1.69, 20, ""));
      }
      
      @Test
      public void testeObesidadeGrauILiminteMaximoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau I", calc.calcularImc(101.0, 1.699, 65, ""));
+        assertEquals("Obesidade Grau I", calc.calcularImc(101.0, 1.69, 65, ""));
      }
 
      @Test
      public void testeObesidadeGrauILiminteMinimoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau I", calc.calcularImc(86.0, 1.693, 20, ""));
+        assertEquals("Obesidade Grau I", calc.calcularImc(86.0, 1.69, 20, ""));
      }    
      
      
      @Test
      public void testeObesidadeGrauILiminteMinimoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau I", calc.calcularImc(86.0, 1.693, 65, ""));
+        assertEquals("Obesidade Grau I", calc.calcularImc(86.0, 1.69, 65, ""));
      }    
        
      @Test
      public void testeObesidadeGrauIILimiteMaximoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(115.0, 1.699, 20, ""));
+        assertEquals("Obesidade Grau II", calc.calcularImc(115.0, 1.69, 20, ""));
      }
      
      @Test
      public void testeObesidadeGrauIILimiteMaximoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(115.0, 1.699, 65, ""));
+        assertEquals("Obesidade Grau II", calc.calcularImc(115.0, 1.69, 65, ""));
      }
      
      
      @Test
      public void testeObesidadeGrauIILimiteMinimoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(100.0, 1.691, 20, ""));
+        assertEquals("Obesidade Grau II", calc.calcularImc(100.0, 1.69, 20, ""));
      }    
      
      
@@ -172,7 +172,7 @@ public class AppTest {
      @Test
      public void testeObesidadeGrauIILimiteMinimoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(100.0, 1.691, 65, ""));
+        assertEquals("Obesidade Grau II", calc.calcularImc(100.0, 1.69, 65, ""));
      }    
        
      @Test
@@ -262,7 +262,7 @@ public class AppTest {
      @Test
      public void testeObesidadeGrauIIdosaLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau I", calc.calcularImc(109.0, 1.716, 66, "feminino"));
+        assertEquals("Obesidade Grau I", calc.calcularImc(109.0, 1.71, 66, "feminino"));
     }  
      
      @Test
@@ -274,13 +274,13 @@ public class AppTest {
      @Test
      public void testeObesidadeGrauIIdosoLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau I", calc.calcularImc(104.0, 1.723, 66, "masculino"));
+        assertEquals("Obesidade Grau I", calc.calcularImc(104.0, 1.72, 66, "masculino"));
     }  
      
      @Test
      public void testeObesidadeGrauIIdosoLimiteMinimo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau I", calc.calcularImc(88.0, 1.712, 66, "masculino"));
+        assertEquals("Obesidade Grau I", calc.calcularImc(88.0, 1.71, 66, "masculino"));
     }  
      
     //------------------------------------------------------------------------//
@@ -288,25 +288,25 @@ public class AppTest {
      @Test
      public void testeObesidadeGrauIIIdosaLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(122.0, 1.711, 66, "feminino"));
+        assertEquals("Obesidade Grau II", calc.calcularImc(122.0, 1.71, 66, "feminino"));
     }  
      
      @Test
      public void testeObesidadeGrauIIIdosaLimiteMinimo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(109.0, 1.714, 66, "feminino"));
+        assertEquals("Obesidade Grau II", calc.calcularImc(109.0, 1.71, 66, "feminino"));
     }  
      
      @Test
      public void testeObesidadeGrauIIIdosoLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(116.0, 1.706, 66, "masculino"));
+        assertEquals("Obesidade Grau II", calc.calcularImc(116.0, 1.70, 66, "masculino"));
     }  
      
      @Test
      public void testeObesidadeGrauIIIdosoLimiteMinimo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(102.0, 1.705, 66, "masculino"));
+        assertEquals("Obesidade Grau II", calc.calcularImc(102.0, 1.70, 66, "masculino"));
     }  
      
      //--------------------------------------------------------------------------//
