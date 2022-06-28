@@ -34,7 +34,7 @@ public class CalculadoraIMC {
 		// Índice de massa corporal para mulheres acima de 65 anos
 		else if (idade > 65) {
 			resultado = "Acima de 65: ";
-			if (sexo == "mulher") {
+			if (sexo.equals("feminino")) {
 				if (imc <= 21.9) {
 					resultado += "Baixo peso Grave";
 				}
@@ -54,7 +54,7 @@ public class CalculadoraIMC {
 					resultado += "Obesidade grau III";
 				}
 			}
-			if (sexo == "homem") {
+			if (sexo.equals("masculino")) {
 				if (imc <= 21.9) {
 					resultado += "Baixo peso Grave";
 				}
@@ -78,7 +78,7 @@ public class CalculadoraIMC {
 		// Índice de massa corporal para meninas de até 19 anos
 		else if (idade < 20) {
 			resultado = "Crianças: ";
-			if (sexo == "mulher") {
+			if (sexo.equals("feminino")) {
 				if (imc <= 5.0) {
 					resultado += "Baixo peso";
 				}
@@ -92,7 +92,7 @@ public class CalculadoraIMC {
 					resultado += "Obesidade";
 				}
 			}
-			if (sexo == "homem") {
+			if (sexo.equals("masculino")) {
 				if (imc <= 5.0) {
 					resultado += "Baixo peso";
 				}
