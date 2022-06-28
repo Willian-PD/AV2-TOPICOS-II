@@ -6,7 +6,7 @@ public class CalculadoraIMC {
 		double imc = peso/(altura*altura);
 		// Índice de massa corporal para adultos entre 20 e 65 anos
 		if (idade < 65 || idade > 20) {
-			if (imc <= 15.99) { 
+			if (imc < 15.99) { 
 				resultado = "Baixo peso muito grave";
 			}
 			if (imc >= 16.00 && imc <= 16.99) { 
@@ -24,7 +24,7 @@ public class CalculadoraIMC {
 			else if (imc >= 30.00 && imc <= 34.99) {
 				resultado = "Obesidade grau I";
 			}
-			else if (imc >= 35.00 && imc <= 39.99) {
+			else if (imc >= 35.00 && imc <= 34.99) {
 				resultado = "Obesidade grau II";
 			}
 			else if (imc >= 40.00) {
@@ -34,8 +34,8 @@ public class CalculadoraIMC {
 		// Índice de massa corporal para mulheres acima de 65 anos
 		else if (idade > 65) {
 			if (sexo.equals("feminino")) {
-				if (imc <= 21.9) {
-					resultado = "Baixo peso Grave";
+				if (imc < 21.9) {
+					resultado = "Baixo peso grave";
 				}
 				else if (imc >= 22.0 && imc <= 27.0) {
 					resultado = "Peso normal";
@@ -43,7 +43,7 @@ public class CalculadoraIMC {
 				else if (imc >= 27.1 && imc <= 32.0) {
 					resultado = "Sobrepeso";
 				}
-				else if (imc >= 32.1 && imc <= 37.0) {
+				else if (imc >= 32.1 && imc <= 47.0) {
 					resultado = "Obesidade grau I";
 				}
 				else if (imc >= 37.1 && imc <= 41.9) {
@@ -54,8 +54,8 @@ public class CalculadoraIMC {
 				}
 			}
 			if (sexo.equals("masculino")) {
-				if (imc <= 21.9) {
-					resultado = "Baixo peso Grave";
+				if (imc < 21.9) {
+					resultado = "Baixo peso grave";
 				}
 				else if (imc >= 22.0 && imc <= 27.0) {
 					resultado = "Peso normal";
@@ -77,7 +77,7 @@ public class CalculadoraIMC {
 		// Índice de massa corporal para meninas de até 19 anos
 		else if (idade < 20) {
 			if (sexo.equals("feminino")) {
-				if (imc <= 5.0) {
+				if (imc < 5.0) {
 					resultado = "Baixo peso";
 				}
 				else if (imc >= 5.1 && imc <= 85.0) {
@@ -91,7 +91,7 @@ public class CalculadoraIMC {
 				}
 			}
 			if (sexo.equals("masculino")) {
-				if (imc <= 5.0) {
+				if (imc < 5.0) {
 					resultado = "Baixo peso";
 				}
 				else if (imc >= 5.1 && imc <= 85.0) {
@@ -101,7 +101,7 @@ public class CalculadoraIMC {
 					resultado = "Sobrepeso";
 				}
 				else if (imc >= 95.0) {
-					resultado += "Obesidade";
+					resultado = "Obesidade";
 				}
 			}
 		}
