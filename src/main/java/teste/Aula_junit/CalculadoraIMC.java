@@ -33,74 +33,72 @@ public class CalculadoraIMC {
 		}
 		// Índice de massa corporal para mulheres acima de 65 anos
 		else if (idade > 65) {
-			resultado = "Acima de 65: ";
 			if (sexo.equals("feminino")) {
 				if (imc <= 21.9) {
-					resultado += "Baixo peso Grave";
+					resultado = "Baixo peso Grave";
 				}
 				else if (imc >= 22.0 && imc <= 27.0) {
-					resultado += "Peso normal";
+					resultado = "Peso normal";
 				}
 				else if (imc >= 27.1 && imc <= 32.0) {
-					resultado += "Sobrepeso";
+					resultado = "Sobrepeso";
 				}
 				else if (imc >= 32.1 && imc <= 37.0) {
-					resultado += "Obesidade grau I";
+					resultado = "Obesidade grau I";
 				}
 				else if (imc >= 37.1 && imc <= 41.9) {
-					resultado += "Obesidade grau II";
+					resultado = "Obesidade grau II";
 				}
 				else if (imc >= 42.0) {
-					resultado += "Obesidade grau III";
+					resultado = "Obesidade grau III";
 				}
 			}
 			if (sexo.equals("masculino")) {
 				if (imc <= 21.9) {
-					resultado += "Baixo peso Grave";
+					resultado = "Baixo peso Grave";
 				}
 				else if (imc >= 22.0 && imc <= 27.0) {
-					resultado += "Peso normal";
+					resultado = "Peso normal";
 				}
 				else if (imc >= 27.1 && imc <= 30.0) {
-					resultado += "Sobrepeso";
+					resultado = "Sobrepeso";
 				}
 				else if (imc >= 30.1 && imc <= 35.0) {
-					resultado += "Obesidade grau I";
+					resultado = "Obesidade grau I";
 				}
 				else if (imc >= 35.1 && imc <= 39.9) {
-					resultado += "Obesidade grau II";
+					resultado = "Obesidade grau II";
 				}
 				else if (imc >= 40.0) {
-					resultado += "Obesidade grau III";
+					resultado = "Obesidade grau III";
 				}
 			}
 		}
 		// Índice de massa corporal para meninas de até 19 anos
 		else if (idade < 20) {
-			resultado = "Crianças: ";
 			if (sexo.equals("feminino")) {
 				if (imc <= 5.0) {
-					resultado += "Baixo peso";
+					resultado = "Baixo peso";
 				}
 				else if (imc >= 5.1 && imc <= 85.0) {
-					resultado += "Peso normal";
+					resultado = "Peso normal";
 				}
 				else if (imc >= 85.1 && imc <= 95.0) {
-					resultado += "Sobrepeso";
+					resultado = "Sobrepeso";
 				}
 				else if (imc >= 95.0) {
-					resultado += "Obesidade";
+					resultado = "Obesidade";
 				}
 			}
 			if (sexo.equals("masculino")) {
 				if (imc <= 5.0) {
-					resultado += "Baixo peso";
+					resultado = "Baixo peso";
 				}
 				else if (imc >= 5.1 && imc <= 85.0) {
-					resultado += "Peso normal";
+					resultado = "Peso normal";
 				}
 				else if (imc >= 85.1 && imc <= 95.0) {
-					resultado += "Sobrepeso";
+					resultado = "Sobrepeso";
 				}
 				else if (imc >= 95.0) {
 					resultado += "Obesidade";
