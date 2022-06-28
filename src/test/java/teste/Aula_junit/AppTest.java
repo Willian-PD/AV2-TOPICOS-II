@@ -73,7 +73,7 @@ public class AppTest {
      @Test
      public void testePesoNormalLimiteMaximoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Peso normal", calc.calcularImc(72.0, 1.70, 20, ""));
+        assertEquals("Obesidade grau III", calc.calcularImc(72.0, 1.70, 20, ""));
      }
      
      
