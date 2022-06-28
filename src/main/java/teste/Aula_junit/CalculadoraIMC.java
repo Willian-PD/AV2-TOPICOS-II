@@ -24,10 +24,10 @@ public class CalculadoraIMC {
 			else if (imc < 30.00 && imc > 34.99) {
 				resultado = "Obesidade grau I";
 			}
-			else if (imc < 35.00 && imc > 34.99) {
+			else if (imc < 35.00 && imc > 39.99) {
 				resultado = "Obesidade grau II";
 			}
-			else if (imc < 40.00) {
+			else if (imc > 40.00) {
 				resultado = "Obesidade grau III";
 			}
 		}
