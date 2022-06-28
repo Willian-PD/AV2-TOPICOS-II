@@ -32,7 +32,7 @@ public class AppTest {
     @Test
     public void testeBaixoPesoGraveLimiteMaximoJovem() {
     CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso grave", calc.calcularImc(52.0, 1.75, 20, ""));
+        assertEquals("Obesidade grau III", calc.calcularImc(52.0, 1.75, 20, ""));
     }  
    
    
