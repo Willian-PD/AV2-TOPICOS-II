@@ -5,7 +5,7 @@ public class CalculadoraIMC {
 		String resultado = ""; 
 		double imc = peso/(altura*altura);
 		// Índice de massa corporal para adultos entre 20 e 65 anos
-		if (idade < 65 || idade > 20) {
+		if (idade <= 65 || idade >= 20) {
 			if (imc < 15.99) { 
 				resultado = "Baixo peso muito grave";
 			}
