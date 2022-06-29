@@ -5,34 +5,7 @@ public class CalculadoraIMC {
 		String resultado = ""; 
 		double imc = peso/(altura*altura);
 		// Índice de massa corporal para adultos entre 20 e 65 anos
-		if (idade <= 65 || idade >= 20) {
-			if (imc < 16.00) { 
-				resultado = "Baixo peso muito grave";
-			}
-			else if (imc >= 16.00 && imc <= 16.99) { 
-				resultado = "Baixo peso grave";
-			}
-			else if (imc >= 17.00 && imc <= 18.49) { 
-				resultado = "Peso baixo";
-			}
-			else if (imc >= 18.50 && imc <= 24.99) {
-				resultado = "Peso normal";
-			}
-			else if (imc >= 25.00 && imc <= 29.99) {
-				resultado = "Sobrepeso";
-			}
-			else if (imc >= 30.00 && imc <= 34.99) {
-				resultado = "Obesidade Grau I";
-			}
-			else if (imc >= 35.00 && imc <= 34.99) {
-				resultado = "Obesidade Grau II";
-			}
-			else if (imc >= 40.00) {
-				resultado = "Obesidade Grau III";
-			}
-		}
-		// Índice de massa corporal para mulheres acima de 65 anos
-		else if (idade > 65) {
+		if (idade > 65) {
 			if (sexo.equals("feminino")) {
 				if (imc < 21.9) {
 					resultado = "Baixo peso grave";
@@ -72,6 +45,33 @@ public class CalculadoraIMC {
 				else if (imc >= 40.0) {
 					resultado = "Obesidade Grau III";
 				}
+			}
+		}
+		// Índice de massa corporal para mulheres acima de 65 anos
+		else if (idade <= 65 || idade >= 20) {
+			if (imc < 16.00) { 
+				resultado = "Baixo peso muito grave";
+			}
+			else if (imc >= 16.00 && imc <= 16.99) { 
+				resultado = "Baixo peso grave";
+			}
+			else if (imc >= 17.00 && imc <= 18.49) { 
+				resultado = "Peso baixo";
+			}
+			else if (imc >= 18.50 && imc <= 24.99) {
+				resultado = "Peso normal";
+			}
+			else if (imc >= 25.00 && imc <= 29.99) {
+				resultado = "Sobrepeso";
+			}
+			else if (imc >= 30.00 && imc <= 34.99) {
+				resultado = "Obesidade Grau I";
+			}
+			else if (imc >= 35.00 && imc <= 34.99) {
+				resultado = "Obesidade Grau II";
+			}
+			else if (imc >= 40.00) {
+				resultado = "Obesidade Grau III";
 			}
 		}
 		// Índice de massa corporal para meninas de até 19 anos
