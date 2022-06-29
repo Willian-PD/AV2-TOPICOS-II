@@ -205,7 +205,7 @@ public class CalculadoraIMC {
         }
 		else if(sexo == "masculino") {
             if(idade == 2) {
-                else if(imc < 15) {
+                if(imc < 15) {
                     return "Baixo peso";
                 }
                 else if(imc >= 15 && imc <= 18) {
