@@ -334,7 +334,7 @@ public class CalculadoraIMC {
 		else { 
 			resultado = "Valor Invalido";
 		}
-		return = resultado;
+		return resultado;
 		
 	}
 	
