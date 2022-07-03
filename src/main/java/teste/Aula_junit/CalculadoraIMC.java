@@ -8,7 +8,7 @@ public class CalculadoraIMC {
 		if (idade > 65) {
 			if (sexo.equals("feminino")) {
 				if (imc < 21.9) {
-					resultado = "Baixo peso grave";
+					resultado = "Baixo peso";
 				}
 				else if (imc >= 22.0 && imc <= 27.0) {
 					resultado = "Peso normal";
@@ -16,7 +16,7 @@ public class CalculadoraIMC {
 				else if (imc >= 27.1 && imc <= 32.0) {
 					resultado = "Sobrepeso";
 				}
-				else if (imc >= 32.1 && imc <= 47.0) {
+				else if (imc >= 32.1 && imc <= 37.0) {
 					resultado = "Obesidade Grau I";
 				}
 				else if (imc >= 37.1 && imc <= 41.9) {
@@ -28,21 +28,21 @@ public class CalculadoraIMC {
 			}
 			if (sexo.equals("masculino")) {
 				if (imc < 21.9) {
-					resultado = "Baixo peso grave";
+					resultado = "Baixo peso";
 				}
 				else if (imc >= 22.0 && imc <= 27.0) {
 					resultado = "Peso normal";
 				}
-				else if (imc >= 27.1 && imc <= 30.0) {
+				else if (imc >= 27.1 && imc <= 32.0) {
 					resultado = "Sobrepeso";
 				}
-				else if (imc >= 30.1 && imc <= 35.0) {
+				else if (imc >= 32.1 && imc <= 35.0) {
 					resultado = "Obesidade Grau I";
 				}
-				else if (imc >= 35.1 && imc <= 39.9) {
+				else if (imc >= 37.1 && imc <= 41.9) {
 					resultado = "Obesidade Grau II";
 				}
-				else if (imc >= 40.0) {
+				else if (imc >= 42.0) {
 					resultado = "Obesidade Grau III";
 				}
 			}
@@ -56,7 +56,7 @@ public class CalculadoraIMC {
 				resultado = "Baixo peso grave";
 			}
 			else if (imc >= 17.00 && imc <= 18.49) { 
-				resultado = "Peso baixo";
+				resultado = "Baixo peso";
 			}
 			else if (imc >= 18.50 && imc <= 24.99) {
 				resultado = "Peso normal";
@@ -67,7 +67,7 @@ public class CalculadoraIMC {
 			else if (imc >= 30.00 && imc <= 34.99) {
 				resultado = "Obesidade Grau I";
 			}
-			else if (imc >= 35.00 && imc <= 34.99) {
+			else if (imc >= 35.00 && imc <= 39.99) {
 				resultado = "Obesidade Grau II";
 			}
 			else if (imc >= 40.00) {
@@ -78,263 +78,263 @@ public class CalculadoraIMC {
 		else if(sexo == "feminino") {
             if(idade == 2) {
                 if(imc > 14.2 && imc < 16) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 16 && imc < 18) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc >= 18 && imc < 19) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc >= 19) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 4) {
                 if(imc < 14) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc > 14 && imc <= 16.9) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 16.9 && imc < 18) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc >= 18) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 6) {
                 if(imc < 14.9) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 14.9 && imc <= 17) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 17 && imc <= 18.8) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 18.8) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 8) {
                 if(imc < 14) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 14 && imc <= 18.2) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 18.2 && imc <= 20.6) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 20.6) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 10) {
                 if(imc < 14.5) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 14.5 && imc <= 20) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 20 && imc <= 23) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 23) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 12) {
                 if(imc < 16.4) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 16.4 && imc <= 21.7) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 21.7 && imc <= 25) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 25) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 14) {
                 if(imc < 16.3) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 16.3 && imc <= 23.1) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 23.1 && imc <= 27.1) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 27.1) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 16) {
                 if(imc < 17.3) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 17.3 && imc <= 24.6) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 24.6 && imc <= 28.9) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 28.9) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 18) {
                 if(imc < 18.1) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 18.1 && imc <= 25.7) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 25.7 && imc <= 30.1) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 30.1) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
         }
 		else if(sexo == "masculino") {
             if(idade == 2) {
                 if(imc < 15) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 15 && imc <= 18) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 18 && imc <= 19.1) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 19.1) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 4) {
                 if(imc < 14.2) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 14.2 && imc <= 16.98) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 16.98 && imc <= 17.9) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 17.9) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 6) {
                 if(imc < 14) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 14 && imc <= 17) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 17 && imc <= 18.2) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 18.2) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 8) {
                 if(imc < 14.1) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 14.1 && imc <= 17.95) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 17.95 && imc <= 20) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 20) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 10) {
                 if(imc < 14.6) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 14.6 && imc <= 19.3) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 19.3 && imc <= 22) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 22) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 12) {
                 if(imc < 15.4) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 15.4 && imc <= 21) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 21 && imc <= 24) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 24) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 14) {
                 if(imc < 16.5) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 16.5 && imc <= 22.7) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 22.7 && imc <= 26) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 26) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 16) {
                 if(imc < 17.8) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 17.8 && imc <= 24.1) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 24.1 && imc <= 27.5) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 27.5) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
             else if(idade == 18) {
                 if(imc < 18.9) {
-                    return "Baixo peso";
+                    resultado = "Baixo peso";
                 }
                 else if(imc >= 18.9 && imc <= 25.6) {
-                    return "Peso normal";
+                    resultado = "Peso normal";
                 }
                 else if(imc > 25.6 && imc <= 28.9) {
-                    return "Sobrepeso";
+                    resultado = "Sobrepeso";
                 }
                 else if(imc > 28.9) {
-                    return "Obesidade";
+                    resultado = "Obesidade";
                 }
             }
         }
 		else { 
 			resultado = "Valor Invalido";
 		}
-		return resultado;
+		return = resultado;
 		
 	}
 	
