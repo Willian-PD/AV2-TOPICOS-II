@@ -7,70 +7,70 @@ public class CalculadoraIMC {
 		// Índice de massa corporal para adultos entre 20 e 65 anos
 		if (idade > 65) {
 			if (sexo.equals("feminino")) {
-				if (imc < 21.9) {
+				if (imc <= 21.9) {
 					resultado = "Baixo peso";
 				}
-				else if (imc >= 22.0 && imc <= 27.0) {
+				else if (imc <= 27) {
 					resultado = "Peso normal";
 				}
-				else if (imc >= 27.1 && imc <= 32.0) {
+				else if (imc <= 32) {
 					resultado = "Sobrepeso";
 				}
-				else if (imc >= 32.1 && imc <= 37.0) {
+				else if (imc <= 37) {
 					resultado = "Obesidade Grau I";
 				}
-				else if (imc >= 37.1 && imc <= 41.9) {
+				else if (imc <= 41.9) {
 					resultado = "Obesidade Grau II";
 				}
-				else if (imc >= 42.0) {
+				else if (imc > 41.9) {
 					resultado = "Obesidade Grau III";
 				}
 			}
 			if (sexo.equals("masculino")) {
-				if (imc < 21.9) {
+				if (imc <= 21.9) {
 					resultado = "Baixo peso";
 				}
-				else if (imc >= 22.0 && imc <= 27.0) {
+				else if (imc <= 27) {
 					resultado = "Peso normal";
 				}
-				else if (imc >= 27.1 && imc <= 32.0) {
+				else if (imc <= 30) {
 					resultado = "Sobrepeso";
 				}
-				else if (imc >= 32.1 && imc <= 37.0) {
+				else if (imc <= 35) {
 					resultado = "Obesidade Grau I";
 				}
-				else if (imc >= 37.1 && imc <= 41.9) {
+				else if (imc <= 39.9) {
 					resultado = "Obesidade Grau II";
 				}
-				else if (imc >= 42.0) {
+				else if (imc > 39.9) {
 					resultado = "Obesidade Grau III";
 				}
 			}
 		}
-		// Índice de massa corporal para mulheres acima de 65 anos
+		// Índice de massa corporal para pessoas acima de 65 anos
 		else if (idade <= 65 || idade >= 20) {
-			if (imc < 16.00) { 
+			if (imc < 16) {
 				resultado = "Baixo peso muito grave";
 			}
-			else if (imc >= 16.00 && imc <= 16.99) { 
+			else if (imc <= 16.99) {
 				resultado = "Baixo peso grave";
 			}
-			else if (imc >= 17.00 && imc <= 18.49) { 
+			else if (imc <= 18.49) {
 				resultado = "Baixo peso";
 			}
-			else if (imc >= 18.50 && imc <= 24.99) {
+			else if (imc <= 24.99) {
 				resultado = "Peso normal";
 			}
-			else if (imc >= 25.00 && imc <= 29.99) {
+			else if (imc <= 29.99) {
 				resultado = "Sobrepeso";
 			}
-			else if (imc >= 30.00 && imc <= 34.99) {
+			else if (imc <= 34.99) {
 				resultado = "Obesidade Grau I";
 			}
-			else if (imc >= 35.00 && imc <= 39.99) {
+			else if (imc <= 39.99) {
 				resultado = "Obesidade Grau II";
 			}
-			else if (imc >= 40.00) {
+			else if (imc > 39.99) {
 				resultado = "Obesidade Grau III";
 			}
 		}
