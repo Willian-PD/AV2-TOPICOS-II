@@ -72,9 +72,9 @@ public class CalculadoraIMC {
             } else if (idade <= 4) {
                 if (imc < 14) {
                     resultado = "Baixo peso";
-                } else if (imc => 14 && imc < 16.9) {
+                } else if (imc >= 14 && imc < 16.9) {
                     resultado = "Peso normal";
-                } else if (imc => 16.9 && imc < 18) {
+                } else if (imc >= 16.9 && imc < 18) {
                     resultado = "Sobrepeso";
                 } else if (imc >= 18) {
                     resultado = "Obesidade";
@@ -104,33 +104,33 @@ public class CalculadoraIMC {
                     resultado = "Baixo peso";
                 } else if (imc >= 14.5 && imc < 20) {
                     resultado = "Peso normal";
-                } else if (imc => 20.0 && imc < 23.0) {
+                } else if (imc >= 20.0 && imc < 23.0) {
                     resultado = "Sobrepeso";
-                } else if (imc => 23.0) {
+                } else if (imc >= 23.0) {
                     resultado = "Obesidade";
                 }
             } else if (idade <= 12) {
-                if (imc =< 16.4) {
+                if (imc <= 16.4) {
                     resultado = "Baixo peso";
                 } else if (imc >= 16.4 && imc < 21.7) {
                     resultado = "Peso normal";
-                } else if (imc => 21.7 && imc < 25.0) {
+                } else if (imc >= 21.7 && imc < 25.0) {
                     resultado = "Sobrepeso";
-                } else if (imc => 25.0) {
+                } else if (imc >= 25.0) {
                     resultado = "Obesidade";
                 }
             } else if (idade <= 14) {
-                if (imc =< 16.3) {
+                if (imc <= 16.3) {
                     resultado = "Baixo peso";
                 } else if (imc >= 16.3 && imc < 23.1) {
                     resultado = "Peso normal";
-                } else if (imc => 23.1 && imc < 27.1) {
+                } else if (imc >= 23.1 && imc < 27.1) {
                     resultado = "Sobrepeso";
-                } else if (imc => 27.1) {
+                } else if (imc >= 27.1) {
                     resultado = "Obesidade";
                 }
             } else if (idade <= 16) {
-                if (imc =< 17.3) {
+                if (imc <= 17.3) {
                     resultado = "Baixo peso";
                 } else if (imc >= 17.3 && imc < 24.6) {
                     resultado = "Peso normal";
@@ -152,7 +152,7 @@ public class CalculadoraIMC {
             }
         } else if (sexo == "masculino") {
             if (idade <= 2) {
-                if (imc =< 15.0) {
+                if (imc <= 15.0) {
                     resultado = "Baixo peso";
                 } else if (imc >= 15.0 && imc < 18.0) {
                     resultado = "Peso normal";
@@ -206,9 +206,9 @@ public class CalculadoraIMC {
                     resultado = "Baixo peso";
                 } else if (imc >= 15.4 && imc < 21) {
                     resultado = "Peso normal";
-                } else if (imc => 21.0 && imc < 24.0) {
+                } else if (imc >= 21.0 && imc < 24.0) {
                     resultado = "Sobrepeso";
-                } else if (imc => 24.0) {
+                } else if (imc >= 24.0) {
                     resultado = "Obesidade";
                 }
             } else if (idade <= 14) {
