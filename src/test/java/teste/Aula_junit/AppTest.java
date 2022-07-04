@@ -17,27 +17,27 @@ public class AppTest {
     }
 
     @Test
-    public void testeBaixoPesoLimiteMinimoJovem() {
+    public void testeBaixoPesoLimiteGraveMinimoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(50.0, 1.749, 20, ""));
+        assertEquals("Baixo peso grave", calc.calcularImc(50.0, 1.749, 20, ""));
     }
 
     @Test
-    public void testeBaixoPesoLimiteMinimoVelho() {
+    public void testeBaixoPesoGraveLimiteMinimoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(50.0, 1.759, 65, ""));
+        assertEquals("Baixo peso grave", calc.calcularImc(50.0, 1.759, 65, ""));
     }
 
     @Test
-    public void testeBaixoPesoLimiteMaximoJovem() {
+    public void testeBaixoPesoGraveLimiteMaximoJovem() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(49.0, 1.749, 20, ""));
+        assertEquals("Baixo peso grave", calc.calcularImc(49.0, 1.749, 20, ""));
     }
 
     @Test
-    public void testeBaixoPesoLimiteMaximoVelho() {
+    public void testeBaixoPesoGraveLimiteMaximoVelho() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso", calc.calcularImc(49.0, 1.749, 65, ""));
+        assertEquals("Baixo peso grave", calc.calcularImc(49.0, 1.749, 65, ""));
     }
 
     @Test
@@ -253,9 +253,9 @@ public class AppTest {
     }
 
     @Test
-    public void testeObesidadeGrauIIIdosoLimiteMaximo() {
+    public void testeObesidadeGrauIIdosoLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(100.0, 1.72, 66, "masculino"));
+        assertEquals("Obesidade Grau I", calc.calcularImc(100.0, 1.72, 66, "masculino"));
     }
 
     @Test
@@ -726,9 +726,9 @@ public class AppTest {
     //meninas 18 anos//
 
     @Test
-    public void testePesoNormalMenina18Anos() {
+    public void testeBaixoPesoMenina18Anos() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Peso normal", calc.calcularImc(45.0, 1.62, 18, "feminino"));
+        assertEquals("Baixo peso", calc.calcularImc(45.0, 1.62, 18, "feminino"));
     }
 
     @Test
