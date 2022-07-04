@@ -177,13 +177,13 @@ public class AppTest {
     @Test
     public void testeBaixoPesoIdosaLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso grave", calc.calcularImc(63.0, 1.70, 66, "feminino"));
+        assertEquals("Baixo peso", calc.calcularImc(63.0, 1.70, 66, "feminino"));
     }
 
     @Test
     public void testeBaixoPesoIdosoLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Baixo peso grave", calc.calcularImc(63.0, 1.70, 66, "masculino"));
+        assertEquals("Baixo peso", calc.calcularImc(63.0, 1.70, 66, "masculino"));
     }
 
     //------------------------------------------------------------------------------//
@@ -227,9 +227,9 @@ public class AppTest {
     }
 
     @Test
-    public void testeSobrepesoIdosoLimiteMaximo() {
+    public void testeObesidadeGrauILimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Sobrepeso", calc.calcularImc(88.0, 1.71, 66, "masculino"));
+        assertEquals("Obesidade Grau I", calc.calcularImc(88.0, 1.71, 66, "masculino"));
     }
 
     @Test
@@ -281,7 +281,7 @@ public class AppTest {
     @Test
     public void testeObesidadeGrauIIIdosoLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
-        assertEquals("Obesidade Grau II", calc.calcularImc(116.0, 1.70, 66, "masculino"));
+        assertEquals("Obesidade Grau III", calc.calcularImc(116.0, 1.70, 66, "masculino"));
     }
 
     @Test
