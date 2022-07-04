@@ -453,6 +453,7 @@ public class AppTest {
       public void testeObesidadeMenina6Anos() {
          CalculadoraIMC calc = new CalculadoraIMC();
          assertEquals("Obesidade", calc.calcularImc(22.0, 1.08, 6, "feminino"));
+      }
  
  //meninos 6 anos//
       
