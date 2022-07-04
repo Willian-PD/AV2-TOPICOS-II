@@ -241,7 +241,7 @@ public class AppTest {
     //-------------------------------------------------------------------------------//
 
     @Test
-    public void testeObesidadeGrauIIIdosaLimiteMaximo() {
+    public void testeObesidadeGrauIIdosaLimiteMaximo() {
         CalculadoraIMC calc = new CalculadoraIMC();
         assertEquals("Obesidade Grau II", calc.calcularImc(112.0, 1.71, 65, "feminino"));
     }
