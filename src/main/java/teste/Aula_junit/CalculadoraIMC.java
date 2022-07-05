@@ -58,7 +58,7 @@ public class CalculadoraIMC {
             }
         }
         // Índice de massa corporal para meninas de até 19 anos
-        else if (sexo == "feminino") {
+        else if (sexo.equals("feminino")) {
             if (idade <= 2) {
                 if (imc > 14.2 && imc < 16) {
                     resultado = "Baixo peso";
@@ -150,7 +150,7 @@ public class CalculadoraIMC {
                     resultado = "Obesidade";
                 }
             }
-        } else if (sexo == "masculino") {
+        } else if (sexo.equals("masculino")) {
             if (idade <= 2) {
                 if (imc <= 15.0) {
                     resultado = "Baixo peso";
